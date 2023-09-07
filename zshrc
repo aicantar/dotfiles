@@ -42,6 +42,12 @@ bindkey "^[[3~" delete-char
 export PROMPT="%B%F{12}%n%f%b %B%F{10}%~%f%b%B > %b"
 
 #
+# ~/.local/bin to PATH.
+#
+
+export PATH="$PATH:$HOME/.local/bin"
+
+#
 # External configs.
 #
 
