@@ -1,3 +1,2 @@
-# Add JetBrains Toolbox directories to PATH
 export PATH="$PATH:/home/aicantar/.local/share/JetBrains/Toolbox/scripts"
 
