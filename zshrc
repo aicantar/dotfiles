@@ -9,19 +9,10 @@ unsetopt beep
 bindkey -e
 
 #
-# asdf-vm.
-#
-
-export ASDF_DIR="$HOME/.local/asdf"
-export ASDF_DATA_DIR="$HOME/.local/asdf"
-. "$ASDF_DIR/asdf.sh"
-
-#
 # Completion.
 #
 
 zstyle :compinstall filename '/home/aicantar/.zshrc'
-fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit
 compinit
 
