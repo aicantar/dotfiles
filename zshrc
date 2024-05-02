@@ -3,8 +3,8 @@
 #
 
 HISTFILE=~/.zhistfile
-HISTSIZE=100000
-SAVEHIST=100000
+HISTSIZE=250000
+SAVEHIST=250000
 unsetopt beep
 bindkey -e
 
@@ -33,10 +33,13 @@ bindkey "^[[3~" delete-char
 export PROMPT="%B%F{12}%n%f%b %B%F{10}%~%f%b%B > %b"
 
 #
-# ~/.local/bin to PATH.
+# Aliases.
 #
 
-export PATH="$PATH:$HOME/.local/bin"
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
 
 #
 # External configs.
@@ -47,4 +50,3 @@ if [[ -d ~/.zshrc.d ]]; then
         [[ -x $file ]] && . $file
     done
 fi
-
