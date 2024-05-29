@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "IBM Plex Mono Text",
+    "editor.fontSize": 14.0,
+    "editor.lineHeight": 26.0,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "line-thin",
+    "editor.smoothScrolling": true,
+
+    "workbench.settings.useSplitJSON": true,
+
+    "telemetry.telemetryLevel": "off"
+}
