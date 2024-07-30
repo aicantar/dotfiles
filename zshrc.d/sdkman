@@ -1,4 +1,5 @@
 # Initialize SDKMAN!
+
 export SDKMAN_DIR="/home/aicantar/.local/sdkman"
 [[ -s "/home/aicantar/.local/sdkman/bin/sdkman-init.sh" ]] && source "/home/aicantar/.local/sdkman/bin/sdkman-init.sh"
 

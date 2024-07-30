@@ -3,16 +3,26 @@
 #
 
 HISTFILE=~/.zhistfile
-HISTSIZE=250000
-SAVEHIST=250000
+HISTSIZE=1000000
+SAVEHIST=1000000
 unsetopt beep
 bindkey -e
+
+#
+# asdf version manager.
+#
+
+if [ -f "$HOME/.asdf/asdf.sh" ]; then
+    . "$HOME/.asdf/asdf.sh"
+    fpath=(${ASDF_DIR}/completions $fpath)
+fi
 
 #
 # Completion.
 #
 
 zstyle :compinstall filename '/home/aicantar/.zshrc'
+
 autoload -Uz compinit
 compinit
 
@@ -50,3 +60,4 @@ if [[ -d ~/.zshrc.d ]]; then
         [[ -x $file ]] && . $file
     done
 fi
+
