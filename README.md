@@ -21,7 +21,7 @@ Copy zshrc and zshrc.d as .zshrc and .zshrc.d to the home directory
 
 ```sh
 cp zshrc ~/.zshrc
-cp zshrc.d ~/.zshrc.d
+cp -r zshrc.d ~/.zshrc.d
 ```
 
 Enable required configs by adding executable attribute to them
