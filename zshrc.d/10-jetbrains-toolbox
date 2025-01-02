@@ -1,0 +1,6 @@
+#
+# Add JetBrains Toolbox scripts to PATH.
+#
+
+export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
+

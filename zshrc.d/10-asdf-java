@@ -1,0 +1,6 @@
+#
+# Set JAVA_HOME to Java installation from asdf.
+#
+
+export JAVA_HOME="$(asdf where java)"
+

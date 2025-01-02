@@ -1,0 +1,16 @@
+#
+# Use rootless podman.sock as DOCKER_HOST.
+#
+# To get this to work:
+#
+#     1. Install docker-compose and podman-docker:
+#
+#         sudo dnf install docker-compose podman-docker
+#
+#     2. Enable podman.sock with systemctl --user:
+#
+#         systemctl enable --now --user podman.socket
+#
+
+export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
+
