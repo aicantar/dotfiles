@@ -9,15 +9,6 @@ unsetopt beep
 bindkey -e
 
 #
-# asdf version manager.
-#
-
-if [ -f "$HOME/.asdf/asdf.sh" ]; then
-    . "$HOME/.asdf/asdf.sh"
-    fpath=(${ASDF_DIR}/completions $fpath)
-fi
-
-#
 # Completion.
 #
 
@@ -46,7 +37,7 @@ export PROMPT="%B%F{12}%n%f%b %B%F{10}%~%f%b%B > %b"
 # Aliases.
 #
 
-alias ls="ls --color=auto"
+alias ls="ls --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
