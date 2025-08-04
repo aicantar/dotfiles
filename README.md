@@ -35,7 +35,7 @@ Reload the shell to apply changes.
 ### `zsh-completions`
 
 If you use [`zsh-completions`](https://github.com/zsh-users/zsh-completions), it is
-expected to be installed to `$HOME/.local/share/zsh/zsh-completions`, as defined in
+expected to be installed to `$HOME/.local/share/zsh/zsh-completions` as defined in
 [`zshrc#16`](https://github.com/aicantar/dotfiles/blob/trunk/zshrc#L16).
 
 Clone the repository to this directory and it should work out of the box.
