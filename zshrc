@@ -12,8 +12,11 @@ bindkey -e
 # Completion.
 #
 
-zstyle :compinstall filename '/home/aicantar/.zshrc'
+if [ -d "~/.local/share/zsh/zsh-completions/src" ]; then
+    fpath=(~/.local/share/zsh/zsh-completions/src fpath)
+fi
 
+zstyle :compinstall filename '/home/aicantar/.zshrc'
 autoload -Uz compinit
 compinit
 
