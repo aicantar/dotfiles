@@ -53,3 +53,15 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-Alias FromJson ConvertFrom-Json
 Set-Alias ToJson ConvertTo-Json
 Set-Alias npp 'C:\Program Files\Notepad++\notepad++.exe'
+
+#
+# Functions.
+#
+
+function Get-Timestamp {
+	return Get-Date -Format "yyyyMMddHHmmss"
+}
+
+function Get-UnixTimestamp {
+	return [DateTimeOffset]::Now.ToUnixTimeSeconds()
+}
