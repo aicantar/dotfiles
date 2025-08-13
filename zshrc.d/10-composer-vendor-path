@@ -1,0 +1,6 @@
+#
+# Add composer bin to PATH.
+#
+
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
