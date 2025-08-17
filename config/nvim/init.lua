@@ -10,6 +10,8 @@ vim.opt.guicursor = {
     "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
 
+vim.opt.cursorline = true
+
 -- Indentation settings.
 
 vim.opt.tabstop = 4
